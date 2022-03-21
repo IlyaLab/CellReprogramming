@@ -1,3 +1,3 @@
 # CellReprogramming
-##Synthetic Data
-###Full Network and Sampled Network Comparison
+## Synthetic Data Analysis
+### Full Network and Sampled Network Comparison
