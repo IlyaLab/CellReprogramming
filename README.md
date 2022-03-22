@@ -41,4 +41,4 @@ Please find the relevant files in SyntheticDataAnalysis/SampledNetworkConsistenc
 4. Run Plots.ipynb notebook (R kernel). ggplot2, ggpubr are the required libraries. Configurable parameters are figure_folder=the folder where the plots will be saved, prob_shift_folder=the folder where probability shift values will be read from. 
 
 ### Finding The TFs that Induce Transdifferentiation From Progenitor B Cell Monocyte
-1. Download data from ![here](https://drive.google.com/file/d/1tF6pgtz52wGwaT6DMeMaEm9IA9E3romX/view?usp=sharing) 
+1. Download data from [here](https://drive.google.com/file/d/1tF6pgtz52wGwaT6DMeMaEm9IA9E3romX/view?usp=sharing) 
