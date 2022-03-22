@@ -36,8 +36,8 @@ Please find the relevant files in SyntheticDataAnalysis/SampledNetworkConsistenc
 
 2. Run cons_sampled_network_constructBNs.sh from command line. The configurable parameters are Attractors_folder =the folder where the BN construction will read attractors, output_folder= where the results from BN construction algorithm will be saved, n_sets= the number of runs for the same  attractor set for consistency analysis, num_bns=Number of times the BN construction algorithm will run.
 
-3. Run PrepareDataForPlot.jl from command line. The required packages are FileIO, JLD2, DelimitedFiles, DataFrames. attractor_folder= the folder where the attractors will be read, intervention_folder= the folder where the intervention results will be read, shift_result_folder=the folder the probability shift results will be written. 
+3. Run PrepareDataForPlot.jl from command line. The required packages are FileIO, JLD2, DelimitedFiles, DataFrames. attractor_folder= the folder where the attractors will be read from, intervention_folder= the folder where the intervention results will be read from, shift_result_folder=the folder the probability shift results will be written. 
 
-4. Run Plots.ipynb notebook (R kernel). ggplot2, ggpubr are the required libraries. Configurable parameters are figure_folder=the folder where the plots will be saved, prob_shift_folder=the folder where probability shift values will be read. 
+4. Run Plots.ipynb notebook (R kernel). ggplot2, ggpubr are the required libraries. Configurable parameters are figure_folder=the folder where the plots will be saved, prob_shift_folder=the folder where probability shift values will be read from. 
 
 
