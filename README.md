@@ -53,4 +53,4 @@ Please find the relevant files in ProB_Monocyte_Example folder.
 
 5. Run FindAttractors_Interventions.sh file from command line to get probability shifts induced by interventions and attractor's steady state distribution probabilities. Configurable parameters n_sets number of cell pairs, attractor_file=the cell pairs that the BNs have been built on, result folder= the folder where BNs will be retrieved, output folder= the folder where the probability shift induced by interventions. 
 
-6. 
+6. Run plot_results.R file to get Figure 6. Required libraries are TripleR and RobustRankAggreg. Configurable parameters are  n_sets=the number of cell pairs that the analysis has been performed on, input_folder= the folder where intervention results are read from. 
