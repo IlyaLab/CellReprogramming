@@ -1,4 +1,4 @@
-
+n_sets=500
 attractor_file="Attractors.csv"
 result_folder="RESULTS"
 output_folder="Output"
