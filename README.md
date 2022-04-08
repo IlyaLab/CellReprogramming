@@ -1,4 +1,5 @@
 # CellReprogramming
+The analyses are implemented in R and Julia programming languages. 
 ## Synthetic Data Analysis
 ### Full Network and Sampled Network Comparison
 Please find the relevant files in SyntheticDataAnalysis/FullNetwork_SampledNetwork_Comparison folder.
