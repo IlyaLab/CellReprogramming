@@ -6,6 +6,9 @@ Program Written by : Ranadip Pal
 Last Modified      : 15th July, 2005
 */
 
+/* Code modified by Bahar Tercan,
+    2021
+*/
 
 
 #include <stdio.h>
