@@ -69,14 +69,13 @@ end
 n_iter=300000
 n_burnin=100000
 nsets=500
-parameter_main_folder=ARGS[1]
-found_attractor_folder=ARGS[2]
+parameter_folder =ARGS[1]
+attractor_folder =ARGS[2]
 
 n_genes=30
 maxp=3
 
-parameter_folder=parameter_main_folder
-attractor_folder=found_attractor_folder
+
 mkpath(attractor_folder)
 
 @threads for i in 1: nsets
