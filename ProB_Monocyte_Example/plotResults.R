@@ -8,8 +8,7 @@ names(TFs)=NULL
 results=list()
 melted_results=list()
 shift_df=read.csv("prob_shifts_after_intervention.csv")
-
-#"Sample"  "TF" "Intervention" "Shift"  
+ 
 
 shift_df$TF=TFs[shift_df$TF]
 
