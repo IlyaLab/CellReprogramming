@@ -44,7 +44,7 @@ Please find the relevant files in SyntheticDataAnalysis/SampledNetworkConsistenc
 ### Finding The TFs that Induce Transdifferentiation From Progenitor B Cell Monocyte
 Please find the relevant files in ProB_Monocyte_Example folder.
 
-1. Download data from [here](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116256![image](https://user-images.githubusercontent.com/62409751/182430550-12f981bb-3643-4025-be61-37aa2e0ffd63.png). 
+1. Download data from [here](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116256). 
 
 2. Run prepareAttractors.ipynb (R kernel) to prepare the input for the BN construction algorithm. The required libraries are ggplot2, dplyr, GA. The configurable parameters are departure_cell=the source cell type that is aimed to transdifferentiate from, destination_cell=the cell type that is targeted. n_cell_pairs=the number of pairs (one cell from desired cell type and  one cell from undesired cell type), parent_sampled_folder= the folders where the attractors will be saved,  num_sub_bn_sets number of subsamples in building sampled network approach, num_sel_bits= number of genes that will be in building the sampled networks num_bits=total number of genes. 
  
