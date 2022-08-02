@@ -52,11 +52,13 @@ Please find the relevant files in ProB_Monocyte_Example folder.
 
 4. Run run_bn_construction_prob_mono.sh from command line to construct BNs. Configurable parameters are Attractors_folder=the folder where the attractors will be read from, output_folder=the folder where the built BNs will be stored, n_sets=the number of cell pairs that the BNs will be built on. num_bns=the number of times that BN construction algorithm will run. 
 
-5. Run saveJuliaParameters.sh from command line to save Boolean Network rules.Configurable parameters are attractors_folder=the folder where the attractors are read from by BN construction algorithm, BNfolder=the folder where the script will find built BNs, the parameters_folder = the output folder where the BN rules are written. 
+5. Run saveJuliaParameters.sh from command line to save Boolean Network rules. Configurable parameters are attractors_folder=the folder where the attractors are read from by BN construction algorithm, BNfolder=the folder where the script will find built BNs, the parameters_folder = the output folder where the BN rules are written. 
 
-6. Run getAttractors.sh from command line to save the Steady State Distribution. Configurable parameters 
+6. Run getAttractors.sh from command line to save the steady state distribution. Configurable parameters attractors_folder=the folder where the steady state distributinos will be written into. parameters_folder=the folder where the BN rules will be read from. 
 
+7. Run getInterventions.sh from command line to save the steady state distribution after interventions. Configurable parameters intervention_folder=the folder where the steady state distributinos will be written into. parameters_folder=the folder where the BN rules will be read from.
+ 
+8. Run Save_Probability_Shifts.R to compute probability shifts after intervention. Required libraries are stringr and  GA. Configurable parameters are 
+intervention_folder= the folder where the steady state distribution after intervention will be read from, nbits=the number of nodes in the Probabilistic Boolean Network (PBN), nsamples=number of PBNs.
 
-5. Run FindAttractors_Interventions.sh file from command line to get probability shifts induced by interventions and attractor's steady state distribution probabilities. Configurable parameters n_sets number of cell pairs, attractor_file=the cell pairs that the BNs have been built on, result folder= the folder where BNs will be retrieved, output folder= the folder where the probability shift induced by interventions. 
-
-6. Run plot_results.R file to get Figure 6. Required libraries are TripleR and RobustRankAggreg. Configurable parameters are  n_sets=the number of cell pairs that the analysis has been performed on, input_folder= the folder where intervention results are read from. 
+9. Run PlotShift.R to visualize probability shift after interventions. Required libraries are TripleR and RobustRankAggreg and dplyr. Configurable parameters are  n_sets=the number of cell pairs that the analysis has been performed on.
