@@ -46,11 +46,16 @@ Please find the relevant files in ProB_Monocyte_Example folder.
 
 1. Download data from [here](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE116256). 
 
-2. Run prepareAttractors.ipynb (R kernel) to prepare the input for the BN construction algorithm. The required libraries are ggplot2, dplyr, GA. The configurable parameters are departure_cell=the source cell type that is aimed to transdifferentiate from, destination_cell=the cell type that is targeted. n_cell_pairs=the number of pairs (one cell from desired cell type and  one cell from undesired cell type), parent_sampled_folder= the folders where the attractors will be saved,  num_sub_bn_sets number of subsamples in building sampled network approach, num_sel_bits= number of genes that will be in building the sampled networks num_bits=total number of genes. 
- 
-3. Run Plots_statistics.ipynb notebook to plot Supplemental Figure1 and Figure2. Required libraries are ggplot2, dplyr, Rtsne. The configureable parameters  are departure_cell=the source cell type that is aimed to transdifferentiate from, destination_cell=the cell type that is targeted. imputed_data=the file path where the imputed scRNAseq data will be read from. raw_data=the file path where the scRNAseq data (without imputation) will be read from. 
+2. Run data_imputation.ipynb (R kernel) notebook. Required libraries are scRecover and  BiocParallel. Its output is the imputed scRNAseq data.
+
+3. Run prepareAttractors.ipynb (R kernel) to prepare the input for the BN construction algorithm. The required libraries are ggplot2, dplyr, GA. The configurable parameters are departure_cell=the source cell type that is aimed to transdifferentiate from, destination_cell=the cell type that is targeted. n_cell_pairs=the number of pairs (one cell from desired cell type and  one cell from undesired cell type), parent_sampled_folder= the folders where the attractors will be saved,  num_sub_bn_sets number of subsamples in building sampled network approach, num_sel_bits= number of genes that will be in building the sampled networks num_bits=total number of genes. 
 
 4. Run run_bn_construction_prob_mono.sh from command line to construct BNs. Configurable parameters are Attractors_folder=the folder where the attractors will be read from, output_folder=the folder where the built BNs will be stored, n_sets=the number of cell pairs that the BNs will be built on. num_bns=the number of times that BN construction algorithm will run. 
+
+5. Run saveJuliaParameters.sh from command line to save Boolean Network rules.Configurable parameters are attractors_folder=the folder where the attractors are read from by BN construction algorithm, BNfolder=the folder where the script will find built BNs, the parameters_folder = the output folder where the BN rules are written. 
+
+6. Run getAttractors.sh from command line to save the Steady State Distribution. Configurable parameters 
+
 
 5. Run FindAttractors_Interventions.sh file from command line to get probability shifts induced by interventions and attractor's steady state distribution probabilities. Configurable parameters n_sets number of cell pairs, attractor_file=the cell pairs that the BNs have been built on, result folder= the folder where BNs will be retrieved, output folder= the folder where the probability shift induced by interventions. 
 
