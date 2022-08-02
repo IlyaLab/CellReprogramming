@@ -85,8 +85,8 @@ intv_folder =ARGS[2]
 n_genes=30
 maxp=3
 mkpath(intv_folder)
-nBNsets=500
- for i=1:nBNsets
+nsets=500
+ for i=1:nsets
     parameters_sampled=FileIO.load(parameter_folder *"/parameters_"*string(i)*".jld2",  "parameters")
      for int_bit=1: n_genes
 	 	for val=0:1
